@@ -149,7 +149,7 @@
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6AAAAOgBhtX2rwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHpSURBVFhH1dfN
+        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAHpSURBVFhH1dfN
         KgVhHMfxiWLhDrxfgxRKXrIhbJSbEOXtBthKQnbKUlnIiq0ssJEbYIMSSxQ2+P5O8+h/ZubMec4xc8qv
         PqX/M///8zivcwLPtGELt/jEdwlau8EmWpFJJvGKpA3TqGcCf0o33pG0gQ/1dqHqnCFpcCVOUVU6EB22
         gCaUitYWYXu+oNdQxRmFHXQO31zA9mpWxZmGHXIAm05MhfRo2eha26tZFSftAMP4gFvT34Nwyf0Au7Br
@@ -164,7 +164,7 @@
   <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        6AAAAOgBhtX2rwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALYSURBVFhHxZdJ
+        5wAAAOcB8BtYtQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAALYSURBVFhHxZdJ
         yE1hGMevKSmkDKUobGwMSVkIKyxYCBmykTKubG3MGcJOkbCQRLKQIhsiZV4ZF0SsDBkWkpnf73Sf0/1e
         937OOdzPv37d+zznfd73ed/zTqdWQIfgPczJrGKaC8YczKy/1Df4Ccczq5hOgDHGllZPmAT2eAFYkVyr
         20WwbMRpW5d1WndL9YHN8AYi+F9j3RvBtjpoENyGZkHt4BbYZqbucAnioZNnOyyBdGirYl3W+RqinQvQ
@@ -196,7 +196,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfoAAAHxCAYAAACF0n6KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAA/7JJREFUeF7sfQWAXEW6dU/reCbJJBl3t8jElcVtgV1gsYVlDVgWd5eEuCcQEmLE
+        vQAADr0BR/uQrQAA/7JJREFUeF7sfQWAXEW6dU/reCbJJBl3t8jElcVtgV1gsYVlDVgWd5eEuCcQEmLE
         PTOZibu7u7uOT3v3yPnPV52BSciyvH3Y278nHPr27XvrVtWt+s53SjU1qIUXXnjhhRdeePHfCS/Re+GF
         F1544cV/MbxE74UXXnjhhRf/xfASvRdeeOGFF178F8NL9F544YUXXnjxXwwv0XvhhRdeeOHFfzG8RO+F
         F1544YUX/8XwEr0XXnjhhRde/BfDS/ReeOGFF1548V8ML9F74YUXXnjhxX8xvETvhRdeeOGFF//F8BK9

@@ -23,5 +23,11 @@ namespace AgriLogic
             Form FormularioCultivo = new Form1();
             FormularioCultivo.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form FormularioCalendario = new FormularioCalendario();
+            FormularioCalendario.Show();
+        }
     }
 }

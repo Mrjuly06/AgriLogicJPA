@@ -57,7 +57,7 @@
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(24, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(725, 270);
+            this.panel1.Size = new System.Drawing.Size(890, 270);
             this.panel1.TabIndex = 0;
             // 
             // groupBox1
@@ -65,7 +65,7 @@
             this.groupBox1.Controls.Add(this.dgvRegistros);
             this.groupBox1.Location = new System.Drawing.Point(24, 18);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(664, 231);
+            this.groupBox1.Size = new System.Drawing.Size(852, 231);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registros De Cultivos";
@@ -73,20 +73,20 @@
             // dgvRegistros
             // 
             this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistros.Location = new System.Drawing.Point(6, 21);
+            this.dgvRegistros.Location = new System.Drawing.Point(0, 21);
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.RowHeadersWidth = 51;
             this.dgvRegistros.RowTemplate.Height = 24;
-            this.dgvRegistros.Size = new System.Drawing.Size(632, 204);
+            this.dgvRegistros.Size = new System.Drawing.Size(833, 204);
             this.dgvRegistros.TabIndex = 0;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Location = new System.Drawing.Point(12, 339);
+            this.panel2.Location = new System.Drawing.Point(24, 353);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(725, 190);
+            this.panel2.Size = new System.Drawing.Size(891, 217);
             this.panel2.TabIndex = 1;
             // 
             // groupBox2
@@ -104,7 +104,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(12, 19);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(695, 153);
+            this.groupBox2.Size = new System.Drawing.Size(846, 173);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Informacion De Cultivo";
@@ -203,8 +203,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SpringGreen;
-            this.ClientSize = new System.Drawing.Size(800, 572);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(926, 613);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

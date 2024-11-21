@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dao\Class1.cs" />
+    <Compile Include="Formularios\Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,11 +65,29 @@
     <Compile Include="Formularios\Cultivo.Designer.cs">
       <DependentUpon>Cultivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\EventoForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\EventoForms.Designer.cs">
+      <DependentUpon>EventoForms.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UserControlBlack.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\UserControlBlack.Designer.cs">
+      <DependentUpon>UserControlBlack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo De Clases\Calendario.cs" />
     <Compile Include="Modelo De Clases\Cultivo.cs" />
@@ -72,14 +96,26 @@
     <Compile Include="Modelo De Clases\Planificacion.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Cultivo.resx">
       <DependentUpon>Cultivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Entrada.resx">
       <DependentUpon>Entrada.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\EventoForms.resx">
+      <DependentUpon>EventoForms.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UserControlBlack.resx">
+      <DependentUpon>UserControlBlack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
