@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvRegistros = new System.Windows.Forms.DataGridView();
@@ -44,18 +45,28 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCargar = new System.Windows.Forms.Button();
+            this.panelTop = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnMin = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btnMax = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btnCerrar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).BeginInit();
             this.panel2.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.panelTop.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(24, 31);
+            this.panel1.Location = new System.Drawing.Point(24, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(890, 270);
             this.panel1.TabIndex = 0;
@@ -84,7 +95,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.groupBox2);
-            this.panel2.Location = new System.Drawing.Point(24, 353);
+            this.panel2.Location = new System.Drawing.Point(23, 416);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(891, 217);
             this.panel2.TabIndex = 1;
@@ -111,9 +122,9 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(381, 115);
+            this.btnAgregar.Location = new System.Drawing.Point(480, 117);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(209, 32);
+            this.btnAgregar.Size = new System.Drawing.Size(139, 32);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -199,12 +210,84 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Cultivo";
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(301, 345);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(111, 52);
+            this.btnGuardar.TabIndex = 3;
+            this.btnGuardar.Text = "Guardar En Archivo";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // btnCargar
+            // 
+            this.btnCargar.Location = new System.Drawing.Point(562, 345);
+            this.btnCargar.Name = "btnCargar";
+            this.btnCargar.Size = new System.Drawing.Size(110, 52);
+            this.btnCargar.TabIndex = 4;
+            this.btnCargar.Text = "Cargar Archivo";
+            this.btnCargar.UseVisualStyleBackColor = true;
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.Silver;
+            this.panelTop.Controls.Add(this.btnMin);
+            this.panelTop.Controls.Add(this.btnMax);
+            this.panelTop.Controls.Add(this.btnCerrar);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(939, 54);
+            this.panelTop.TabIndex = 6;
+            // 
+            // btnMin
+            // 
+            this.btnMin.Image = ((System.Drawing.Image)(resources.GetObject("btnMin.Image")));
+            this.btnMin.ImageRotate = 0F;
+            this.btnMin.Location = new System.Drawing.Point(756, 12);
+            this.btnMin.Name = "btnMin";
+            this.btnMin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnMin.Size = new System.Drawing.Size(32, 32);
+            this.btnMin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMin.TabIndex = 8;
+            this.btnMin.TabStop = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click_1);
+            // 
+            // btnMax
+            // 
+            this.btnMax.Image = ((System.Drawing.Image)(resources.GetObject("btnMax.Image")));
+            this.btnMax.ImageRotate = 0F;
+            this.btnMax.Location = new System.Drawing.Point(823, 12);
+            this.btnMax.Name = "btnMax";
+            this.btnMax.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnMax.Size = new System.Drawing.Size(32, 32);
+            this.btnMax.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMax.TabIndex = 7;
+            this.btnMax.TabStop = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click_1);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.ImageRotate = 0F;
+            this.btnCerrar.Location = new System.Drawing.Point(882, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnCerrar.Size = new System.Drawing.Size(32, 32);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnCerrar.TabIndex = 6;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(926, 613);
+            this.ClientSize = new System.Drawing.Size(939, 645);
+            this.Controls.Add(this.panelTop);
+            this.Controls.Add(this.btnCargar);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -216,6 +299,11 @@
             this.panel2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.panelTop.ResumeLayout(false);
+            this.panelTop.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,5 +326,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnCargar;
+        private Guna.UI2.WinForms.Guna2Panel panelTop;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btnMin;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btnMax;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox btnCerrar;
     }
 }

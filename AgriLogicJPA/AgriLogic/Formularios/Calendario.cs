@@ -74,6 +74,7 @@ namespace AgriLogic.Formularios
             }
         }
 
+      
         private void btnNext_Click(object sender, EventArgs e)
         {
             daycontainer.Controls.Clear();
@@ -99,5 +100,23 @@ namespace AgriLogic.Formularios
                 daycontainer.Controls.Add(ucdays);
             }
         }
+          private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMax_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+            else this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMin_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+
+
     }
 }

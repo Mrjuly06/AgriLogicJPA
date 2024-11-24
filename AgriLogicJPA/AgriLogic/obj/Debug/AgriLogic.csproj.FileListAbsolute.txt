@@ -37,3 +37,6 @@ C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.pdb
 C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.Formularios.UserControlBlack.resources
 C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.Formularios.FormularioCalendario.resources
 C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.Formularios.UserControlDays.resources
+C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.Formularios.EventoForms.resources
+C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\bin\Debug\Guna.UI2.dll
+C:\Users\almua\OneDrive\Desktop\AgriLogicJPA\AgriLogic\obj\Debug\AgriLogic.csproj.Up2Date

@@ -47,7 +47,17 @@ namespace AgriLogic.Formularios
             cultivo.FechaSiembra = dtpSiembra.Value;
             cultivo.FechaCosecha = dtpCosecha.Value;
 
-            cultivos.Add(cultivo);
+            // Verificar si el cultivo ya existe en la lista
+            int index = cultivos.FindIndex(c => c.CultivoID == cultivo.CultivoID);
+            if (index != -1)
+            {
+                cultivos[index] = cultivo; // Actualizar el cultivo existente
+            }
+            else
+            {
+                cultivos.Add(cultivo); // Agregar nuevo cultivo
+            }
+
             MostrarDatos();
         }
 
@@ -58,6 +68,23 @@ namespace AgriLogic.Formularios
             {
                 dgvRegistros.Rows.Add(cultivo.CultivoID, cultivo.TipoCultivo, cultivo.RequisitosCultivo, cultivo.FechaSiembra.ToShortDateString(), cultivo.FechaCosecha.ToShortDateString());
             }
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void btnMax_Click_1(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal) this.WindowState = FormWindowState.Maximized;
+            else this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnMin_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

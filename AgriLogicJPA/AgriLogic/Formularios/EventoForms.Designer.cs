@@ -91,6 +91,7 @@
             this.Name = "EventoForms";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EventoForms";
+            this.Load += new System.EventHandler(this.EventoForms_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

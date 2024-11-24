@@ -16,5 +16,10 @@ namespace AgriLogic.Formularios
         {
             InitializeComponent();
         }
+
+        private void EventoForms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
