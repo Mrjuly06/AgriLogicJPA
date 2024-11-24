@@ -115,8 +115,5 @@ namespace AgriLogic.Formularios
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-
-
     }
 }

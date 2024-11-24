@@ -1,6 +1,7 @@
 ﻿using AgriLogic.Modelo_De_Clases;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace AgriLogic.Formularios
@@ -14,6 +15,8 @@ namespace AgriLogic.Formularios
             InitializeComponent();
             cultivos = new List<Cultivo>(); // Inicializar lista de cultivos
             btnAgregar.Click += new EventHandler(btnAgregar_Click); // Asociar el evento Click del botón
+            btnGuardar.Click += new EventHandler(btnGuardar_Click); // Asociar el evento Click del botón Guardar
+            btnCargar.Click += new EventHandler(btnCargar_Click); // Asociar el evento Click del botón Cargar
             ConfigurarDataGridView(); // Configurar DataGridView
         }
 
@@ -70,11 +73,77 @@ namespace AgriLogic.Formularios
             }
         }
 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string filePath = "cultivos.txt";
+
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    foreach (Cultivo cultivo in cultivos)
+                    {
+                        string cultivoData = $"{cultivo.CultivoID},{cultivo.TipoCultivo},{cultivo.RequisitosCultivo},{cultivo.FechaSiembra},{cultivo.FechaCosecha}";
+                        writer.WriteLine(cultivoData);
+                    }
+                }
+
+                MessageBox.Show("Datos guardados exitosamente.", "Guardar Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al guardar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCargar_Click(object sender, EventArgs e)
+        {
+            string filePath = "cultivos.txt";
+
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    cultivos.Clear();
+
+                    using (StreamReader reader = new StreamReader(filePath))
+                    {
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            string[] cultivoData = line.Split(',');
+
+                            Cultivo cultivo = new Cultivo
+                            {
+                                CultivoID = int.Parse(cultivoData[0]),
+                                TipoCultivo = cultivoData[1],
+                                RequisitosCultivo = cultivoData[2],
+                                FechaSiembra = DateTime.Parse(cultivoData[3]),
+                                FechaCosecha = DateTime.Parse(cultivoData[4])
+                            };
+
+                            cultivos.Add(cultivo);
+                        }
+                    }
+
+                    MostrarDatos();
+                    MessageBox.Show("Datos cargados exitosamente.", "Cargar Datos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error al cargar los datos: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el archivo de datos.", "Cargar Datos", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
 
         private void btnMax_Click_1(object sender, EventArgs e)
         {

@@ -9,7 +9,6 @@ namespace AgriLogic.Modelo_De_Clases
     public class Inventario
     {
         public int InventarioID { get; set; }
-        public int InsumoID { get; set; }
         public string NombreInsumo { get; set; }
         public int CantidadDisponible { get; set; }
         public string UnidadMedida { get; set; }

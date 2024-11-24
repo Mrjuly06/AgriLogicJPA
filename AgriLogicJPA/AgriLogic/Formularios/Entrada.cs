@@ -1,4 +1,5 @@
 ﻿using AgriLogic.Formularios;
+using InventarioApp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,6 +47,12 @@ namespace AgriLogic
         private void btnMin_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            Form formInventario = new form2();
+            formInventario.Show();
         }
     }
 }

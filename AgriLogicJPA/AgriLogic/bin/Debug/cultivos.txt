@@ -1,0 +1,4 @@
+1,Mango,Agua y Luz,11/24/2024 4:31:44 PM,8/21/2025 4:31:44 PM
+2,Banano,Agua y Luz,11/24/2024 4:31:44 PM,8/21/2025 4:31:44 PM
+3,Cacao,humedad,11/24/2024 4:38:50 PM,3/26/2025 4:38:50 PM
+4,Zanahoria,Riego Y Sol,11/24/2024 4:43:08 PM,1/8/2025 4:43:08 PM
